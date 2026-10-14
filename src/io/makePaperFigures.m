@@ -169,7 +169,7 @@ function exportAnchors(cfg, tag, centers, diagS)
         ylim(ax, [min(diagS.xx2(:)), max(diagS.xx2(:))]);
     end
 
-    % Optional ownership overlay.  The SISC configurations use [1,1], so
+    % Optional ownership overlay.  The experiments use [1,1], so
     % no interior partition lines are drawn and the figure is single-domain.
     if isfield(diagS,'partition_grid') && numel(diagS.partition_grid) == 2 && ...
             isfield(diagS,'bounds') && numel(diagS.bounds) == 4

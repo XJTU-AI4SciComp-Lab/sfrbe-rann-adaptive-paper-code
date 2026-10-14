@@ -1,10 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the corresponding paper."
-title: "Paper Code Template"
+type: software
+title: "SFRBE-RaNN: adaptive randomized neural networks for PDEs via structure-aware feature redistribution and residual-driven block enrichment"
+version: "1.0.0"
 authors:
+  - family-names: Yang
+    given-names: You
+    affiliation: "School of Mathematics and Statistics, Xi'an Jiaotong University"
   - family-names: Wang
     given-names: Fei
     affiliation: "School of Mathematics and Statistics, Xi'an Jiaotong University"
-repository-code: "https://github.com/XJTU-AI4SciComp-Lab/rann-paper-code-template"
+repository-code: "https://github.com/XJTU-AI4SciComp-Lab/sfrbe-rann-adaptive-paper-code"
+url: "https://github.com/XJTU-AI4SciComp-Lab/sfrbe-rann-adaptive-paper-code"
 license: "BSD-3-Clause"
-date-released: "2026-07-03"
+date-released: "2026-10-14"

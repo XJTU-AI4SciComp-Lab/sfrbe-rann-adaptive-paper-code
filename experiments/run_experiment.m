@@ -672,7 +672,7 @@ function saveSFRData(runDir, ctx, diagS)
     if isfield(diagS, 'global_dorfler_lambda'), d.global_dorfler_lambda = diagS.global_dorfler_lambda; end
     if isfield(diagS, 'global_dorfler_ok'), d.global_dorfler_ok = diagS.global_dorfler_ok; end
     if isfield(diagS, 'global_marked_count'), d.global_marked_count = diagS.global_marked_count; end
-    % SFR diagnostics.  The SISC configuration has one global region; the
+    % SFR diagnostics.  The default configuration has one global region; the
     % partition fields are retained only for backward-compatible result files.
     if isfield(diagS, 'partition_grid'), d.partition_grid = diagS.partition_grid; end
     if isfield(diagS, 'partition_id'), d.partition_id = diagS.partition_id; end

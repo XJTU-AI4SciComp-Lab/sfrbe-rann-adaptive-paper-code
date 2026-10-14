@@ -5,7 +5,7 @@ function smoke()
     expDir = fileparts(mfilename('fullpath'));
     root   = fileparts(fileparts(expDir));
     % Put this checkout first so a MATLAB startup path cannot shadow the
-    % SFRBE-SISC implementation with the current SFR/RBE modules.
+    % implementation with the current SFR/RBE modules.
     addpath(genpath(fullfile(root, 'src')),'-begin');
     addpath(fullfile(root, 'experiments'),'-begin');
     addpath(expDir,'-begin');

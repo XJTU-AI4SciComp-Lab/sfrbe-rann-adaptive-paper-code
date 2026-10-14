@@ -1,4 +1,4 @@
-# example
+# examples
 
 Small, fast examples to see how the project works end-to-end.
 
@@ -8,7 +8,7 @@ Runs the full SFRBE pipeline (PDAD -> SFR -> RBE -> evaluate) on a coarse
 60x60 grid with 600 features and one RBE round (~1 minute):
 
 ```matlab
-cd example
+cd examples
 example_poisson_2peak
 ```
 

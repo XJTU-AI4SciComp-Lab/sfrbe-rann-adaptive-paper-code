@@ -143,7 +143,7 @@ function diagS = sab_diagnostic_local(ctx,cfg)
     S_hat = S_norm;
 
     % Single global SFR region.  partition_grid is retained only as a
-    % backward-compatible field; all SISC configurations use [1,1].
+    % backward-compatible field; all configurations use [1,1].
     partition_grid = cfg.partition_grid;
     [partition_id,num_partition,partition_raw_id] = ...
         build_macro_partition_local(sab_points,valid_mask,ctx,partition_grid);
@@ -1188,7 +1188,7 @@ function [r_opt,MSE] = optimize_r_adam_data_local(x_point,mb,Z,A,lambda,r0,opts)
 
         r = r - eta * m_hat ./ (sqrt(v_hat) + eps_adam);
         % Scale parameters remain positive; optional finite bounds are only
-        % a legacy compatibility hook and are not part of the SISC rule.
+        % a legacy compatibility hook and are not part of the SFR rule.
         r = max(r,eps);
         r = min(max(r,clip_min),clip_max);
 
@@ -1312,7 +1312,7 @@ end
 
 function [partition_id,num_partition,partition_raw_id] = ...
     build_macro_partition_local(X,valid_mask,ctx,partition_grid)
-%BUILD_MACRO_PARTITION_LOCAL Backward-compatible ownership map.  The SISC
+%BUILD_MACRO_PARTITION_LOCAL Backward-compatible ownership map.  All
 % configurations use a single [1,1] region; invalid cells remain ignored.
     if nargin < 4 || isempty(partition_grid), partition_grid = [1,1]; end
     partition_grid = double(partition_grid(:).');
@@ -1345,7 +1345,7 @@ end
 
 function m_part = allocate_partition_budgets_local(N,energy,valid_count)
 %ALLOCATE_PARTITION_BUDGETS_LOCAL Backward-compatible budget wrapper.  With
-%the SISC [1,1] configuration the single global region receives all features.
+%the single [1,1] region the global partition receives all features.
     energy = double(energy(:));
     valid_count = double(valid_count(:));
     active = valid_count > 0;
