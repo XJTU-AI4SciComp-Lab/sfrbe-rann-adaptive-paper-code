@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the corresponding paper."
+title: "Paper Code Template"
+authors:
+  - family-names: Wang
+    given-names: Fei
+    affiliation: "School of Mathematics and Statistics, Xi'an Jiaotong University"
+repository-code: "https://github.com/XJTU-AI4SciComp-Lab/rann-paper-code-template"
+license: "BSD-3-Clause"
+date-released: "2026-07-03"
