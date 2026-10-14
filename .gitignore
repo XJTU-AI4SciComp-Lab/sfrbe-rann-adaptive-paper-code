@@ -48,3 +48,7 @@ data/*.mat
 data/*.h5
 data/*.hdf5
 data/*.pkl
+
+# Small tracked reference data: explicit exceptions to the rules above
+!data/darcy_phi.mat
+!data/KdV62_reference_100x100.mat
