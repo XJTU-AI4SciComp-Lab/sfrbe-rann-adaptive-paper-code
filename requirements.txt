@@ -1,6 +1,10 @@
-numpy
-scipy
-matplotlib
-pandas
-pyyaml
-tqdm
+# SFRBE-RaNN: MATLAB implementation, no Python dependencies.
+#
+# Requirements
+#   MATLAB                    base MATLAB only
+#   Parallel Computing Toolbox  gather is used; gpuArray is optional
+#
+# No third-party MATLAB toolboxes and no Python packages are required, so
+# there is nothing to install with `pip install -r requirements.txt`.
+#
+# See README.md, section "Installation".
