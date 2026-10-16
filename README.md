@@ -15,8 +15,9 @@ stages, SFR and RBE.
 
 - Paper title: Adaptive Randomized Neural Networks for PDEs: Structure-Aware Feature Redistribution and Residual-Driven Block Enrichment
 - Authors: You Yang, Fei Wang
-- Journal / preprint: submitted for publication (under review)
-- DOI / arXiv: to be added
+- Preprint: arXiv:2610.21077 [math.NA], cross-list cs.LG (15 October 2026)
+- Journal: submitted for publication (under review)
+- DOI / arXiv: https://arxiv.org/abs/2610.21077
 - Corresponding author: Fei Wang (feiwang.xjtu@xjtu.edu.cn)
 - Code maintainer: You Yang (@Onlooker-DL)
 - Repository: https://github.com/XJTU-AI4SciComp-Lab/sfrbe-rann-adaptive-paper-code
@@ -246,16 +247,19 @@ dependent.
 If you use this code, please cite the paper:
 
 ```bibtex
-@article{yang2026sfrbe,
-  title   = {Adaptive Randomized Neural Networks for {PDEs}: Structure-Aware Feature Redistribution and Residual-Driven Block Enrichment},
-  author  = {Yang, You and Wang, Fei},
-  journal = {},
-  year    = {2026}
+@misc{yang2026adaptiverandomizedneuralnetworks,
+  title        = {Adaptive Randomized Neural Networks for {PDEs}: Structure-Aware Feature Redistribution and Residual-Driven Block Enrichment},
+  author       = {You Yang and Fei Wang},
+  year         = {2026},
+  eprint       = {2610.21077},
+  archivePrefix = {arXiv},
+  primaryClass = {math.NA},
+  url          = {https://arxiv.org/abs/2610.21077}
 }
 ```
 
-The same information is available in `CITATION.cff`; the journal and DOI
-fields will be completed once the paper is published.
+The same information is available in `CITATION.cff`; the journal reference and
+DOI will be added once the paper is published.
 
 ## License
 
