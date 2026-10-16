@@ -1,6 +1,7 @@
 # SFRBE-RaNN paper code
 
 [![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.21077-b31b1b.svg)](https://arxiv.org/abs/2610.21077)
 
 MATLAB implementation of the paper
 **"Adaptive Randomized Neural Networks for PDEs: Structure-Aware Feature
